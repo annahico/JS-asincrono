@@ -17,13 +17,13 @@ const callbackNumber = (number) => {
 
 const generateRandomSum = () => {
     generateRandomNumber((number1) => {
+        console.log("Random number generated:", number1);
         callbackNumber(number1);
         generateRandomNumber((number2) => {
+            console.log("Random number generated:", number2);
             callbackNumber(number2);
             const sum = number1 + number2;
-            console.log("Suma: " + suma);
-            console.log(number1);
-            console.log(number2);
+            console.log("Sum: " + sum);
         });
     });
 };
