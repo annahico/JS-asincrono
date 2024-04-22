@@ -1,5 +1,5 @@
-const callback = () => {
-    console.log();
+const callback = () => {  //función asíncrona que permite ejecutar un CB cuando pasa un tiempo determinado
+    console.log("Hola Mundo!!");
 }
 
-setTimeout (2000);
+setTimeout(callback2000);
